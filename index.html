@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Конфигураторы — демо</title>
+<meta name="description" content="Демонстрация интерактивных 3D-конфигураторов для разных отраслей">
+<style>
+  :root{--bg:#f6f4f0;--card:#fff;--text:#1f1d1a;--muted:#6b665f;--accent:#c2410c;--border:#e6e0d6}
+  @media (prefers-color-scheme:dark){:root{--bg:#161513;--card:#201e1b;--text:#f1ede6;--muted:#a59f96;--accent:#ff8a4c;--border:#34312c}}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:56px 16px}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:650;letter-spacing:-.01em;text-align:center}
+  p.lead{color:var(--muted);margin-top:12px;text-align:center;max-width:600px;line-height:1.5}
+  h3{width:100%;max-width:1100px;margin-top:44px;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;width:100%;max-width:1100px;margin-top:14px}
+  a.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.09)}
+  .card h2{font-size:19px;font-weight:600}
+  .card p{color:var(--muted);margin-top:8px;line-height:1.45;font-size:14.5px;flex:1}
+  .card span{margin-top:14px;color:var(--accent);font-weight:600;font-size:14.5px}
+  footer{margin-top:auto;padding-top:48px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+  <h1>Онлайн-конфигураторы</h1>
+  <p class="lead">Интерактивные демо: выберите параметры, материалы и опции — результат и стоимость обновляются сразу, во многих демо в 3D.</p>
+
+  <h3>Дом и строительство</h3>
+  <div class="grid">
+    <a class="card" href="stroika_domov/"><h2>Дома и дачи</h2><p>Планировка, фундамент, стены, кровля, инженерия и смета.</p><span>Открыть демо →</span></a>
+    <a class="card" href="doma_bani/"><h2>Модульные дома и бани</h2><p>Планировка, фасад, окна, терраса и веранда с расчётом стоимости.</p><span>Открыть демо →</span></a>
+    <a class="card" href="windows/"><h2>Окна</h2><p>Размеры, профиль, стеклопакеты, фурнитура, отделка и монтаж.</p><span>Открыть демо →</span></a>
+    <a class="card" href="dveri/"><h2>Двери</h2><p>Межкомнатные и входные двери: модель, отделка, фурнитура.</p><span>Открыть демо →</span></a>
+    <a class="card" href="lestnitsi/"><h2>Лестницы</h2><p>Прямые, Г- и П-образные, винтовые: 3D, план, проверка норм и смета.</p><span>Открыть демо →</span></a>
+    <a class="card" href="zabori/"><h2>Заборы, ворота, навесы</h2><p>Размеры, материалы, цвета RAL, автоматика и смета.</p><span>Открыть демо →</span></a>
+    <a class="card" href="bassein_landshaft/"><h2>Бассейны и ландшафт</h2><p>Форма чаши, облицовка, подсветка, оборудование и благоустройство.</p><span>Открыть демо →</span></a>
+    <a class="card" href="mebel/"><h2>Мебель</h2><p>Кухни, шкафы-купе, диваны и компьютерные столы.</p><span>Открыть демо →</span></a>
+  </div>
+
+  <h3>Промышленность и техника</h3>
+  <div class="grid">
+    <a class="card" href="promishlennoe/"><h2>Промышленное оборудование</h2><p>Станки с ЧПУ, конвейеры, насосные станции, трансформаторы.</p><span>Открыть демо →</span></a>
+    <a class="card" href="elevator/"><h2>Кабины лифтов</h2><p>Отделка и комплектация кабины лифта.</p><span>Открыть демо →</span></a>
+    <a class="card" href="sborka_pc/"><h2>Сборка ПК</h2><p>Подбор комплектующих с автоматической проверкой совместимости.</p><span>Открыть демо →</span></a>
+  </div>
+
+  <h3>Товары и персонализация</h3>
+  <div class="grid">
+    <a class="card" href="juwerly/"><h2>Ювелирные изделия и часы</h2><p>Кольца и часы: металл, камень, циферблат, гравировка.</p><span>Открыть демо →</span></a>
+    <a class="card" href="obuv/"><h2>Кроссовки</h2><p>Силуэт, цвета деталей, материалы и именная вышивка в 3D.</p><span>Открыть демо →</span></a>
+    <a class="card" href="bags/"><h2>Сумки и рюкзаки</h2><p>Материалы, цвета, карманы и модули.</p><span>Открыть демо →</span></a>
+    <a class="card" href="torti/"><h2>Торты на заказ</h2><p>Ярусы, начинка, покрытие, декор и надпись в 3D с разрезом.</p><span>Открыть демо →</span></a>
+    <a class="card" href="present_nabor/"><h2>Подарочные наборы</h2><p>Наполнение бокса, упаковка и личное послание.</p><span>Открыть демо →</span></a>
+    <a class="card" href="poligrafia/"><h2>Полиграфия и упаковка</h2><p>Коробки, пакеты, мерч, визитки: материалы, печать, отделка.</p><span>Открыть демо →</span></a>
+  </div>
+
+  <h3>Услуги</h3>
+  <div class="grid">
+    <a class="card" href="meropriatia/"><h2>Мероприятия</h2><p>Свадьба, корпоратив, конференция: площадка, кейтеринг, декор, смета.</p><span>Открыть демо →</span></a>
+    <a class="card" href="strahovka/"><h2>Страхование и финансы</h2><p>КАСКО, ОСАГО, путешествия, кредит и лизинг с графиком платежей.</p><span>Открыть демо →</span></a>
+  </div>
+
+  <footer>Для лучшей работы 3D используйте актуальный Chrome, Edge, Safari или Firefox.</footer>
+</body>
+</html>
